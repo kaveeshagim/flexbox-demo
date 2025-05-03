@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Demo</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+        background-color: #f0f0f0;
+      }
+
+      .item {
+        flex: 1 1 200px; /* grow, shrink, basis */
+        background-color: #7e57c2;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flex-wrap + flex-basis Demo</h2>
+    <div class="container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+    </div>
+  </body>
+</html>
